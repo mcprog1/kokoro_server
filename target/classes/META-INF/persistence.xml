@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+      
+    <persistence-unit name="com.lan_KokoroApi_war_1.0-SNAPSHOTPU" transaction-type="JTA">
+            
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+            
+        <jta-data-source>java:/KokoroDB</jta-data-source>
+            
+        <class>Entidades.Administrador</class>
+            
+        <class>Entidades.Categoria</class>
+            
+        <class>Entidades.ClienteProveedor</class>
+            
+        <class>Entidades.Cobros</class>
+            
+        <class>Entidades.Combo</class>
+            
+        <class>Entidades.ComboLinea</class>
+            
+        <class>Entidades.Documento</class>
+            
+        <class>Entidades.DocumentoLinea</class>
+            
+        <class>Entidades.ListaPrecio</class>
+            
+        <class>Entidades.MedioDePago</class>
+            
+        <class>Entidades.Producto</class>
+            
+        <class>Entidades.ProductoTalle</class>
+            
+        <class>Entidades.Rol</class>
+            
+        <class>Entidades.Senia</class>
+            
+        <class>Entidades.Talle</class>
+            
+        <class>Entidades.Temporada</class>
+            
+        <class>Entidades.TipoDocumento</class>
+            
+        <class>Entidades.Token</class>
+            
+        <class>Entidades.Usuario</class>
+            
+        <class>Entidades.Vendedor</class>
+            
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+            
+        <properties>
+                  
+            <property name="hibernate.show_sql" value="true"/>
+                  
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+                
+        </properties>
+          
+    </persistence-unit>
+    
+</persistence>
